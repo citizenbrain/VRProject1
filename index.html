@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+</head>
+<body>
+<a-scene>
+<a-assets>
+    <img id="space" src="space.jpg">
+    <a-asset-item id="shuttle-obj" src="space-shuttle-orbiter.obj"></a-asset-item>
+    <a-asset-item id="shuttle-mtl" src="space-shuttle-orbiter.mtl"></a-asset-item>
+</a-assets>
+    <a-obj-model src="#shuttle-obj" mtl="#shuttle-mtl" material="" obj-model="" position="0.06 -300 0"></a-obj-model>
+
+
+    <a-sky src="#space"></a-sky>
+</a-scene>
+</body>
+</html>
