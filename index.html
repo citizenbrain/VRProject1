@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>VR Project</title>
     <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
     <script>
         window.onload = function() {
@@ -18,10 +18,12 @@
     <a-asset-item id="shuttle-obj" src="space-shuttle-orbiter.obj"></a-asset-item>
     <a-asset-item id="shuttle-mtl" src="space-shuttle-orbiter.mtl"></a-asset-item>
     <audio id="spacesuit" src="spacesuit-breathing.mp3"></audio>
+    <audio id="radio" src="radio.flac"></audio>
 </a-assets>
     <a-obj-model src="#shuttle-obj" mtl="#shuttle-mtl" material="" obj-model="" position="0.06 -300 0"></a-obj-model>
     <a-sphere src="#moontexture" material="" geometry="" position="8.824 4.505 -10.139"></a-sphere>
-    <a-sound src="#spacesuit" autoplay="true" loop="true" on="true" volume="10"></a-sound>
+    <a-sound src="#spacesuit" autoplay="true" loop="true" on="true" volume="5"></a-sound>
+    <a-sound src="#radio" autoplay="true" loop="true" on="true" volume="5"></a-sound>
     <a-sky src="#space"></a-sky>
 </a-scene>
 </body>
