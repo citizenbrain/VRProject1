@@ -15,13 +15,20 @@
 <a-assets>
     <img id="space" src="space.jpg">
     <img id="moontexture" src="moontexture.jpg">
+    <img id="marstexture" src="marstexture.jpg">
+    <img id="jupitertexture" src="jupitertexture.jpg">
+    <img id="crazytexture" src="crazytexture.webp">
     <a-asset-item id="shuttle-obj" src="space-shuttle-orbiter.obj"></a-asset-item>
     <a-asset-item id="shuttle-mtl" src="space-shuttle-orbiter.mtl"></a-asset-item>
     <audio id="spacesuit" src="spacesuit-breathing.mp3"></audio>
     <audio id="radio" src="radio.flac"></audio>
 </a-assets>
+
     <a-obj-model src="#shuttle-obj" mtl="#shuttle-mtl" material="" obj-model="" position="0.06 -300 0"></a-obj-model>
-    <a-sphere src="#moontexture" material="" geometry="" position="8.824 4.505 -10.139"></a-sphere>
+    <a-sphere src="#moontexture" material="" geometry="" scale="2.304 2.304 2.304" position="27.62049 4.505 -3.63307"></a-sphere>
+    <a-sphere src="#marstexture" material="" geometry="" scale="3.232 3.232 3.232" position="-9.02582 9.66564 -41.80904"></a-sphere>
+    <a-sphere src="#jupitertexture" material="" geometry="" scale="2 2 2" rotation="0 52.202 0" position="13.08474 12.65076 15.42301"></a-sphere>
+    <a-sphere src="#crazytexture" material="" geometry="" scale="1.699 1.699 1.699" position="-16.26385 25.32885 -10.139"></a-sphere>
     <a-sound src="#spacesuit" autoplay="true" loop="true" on="true" volume="5"></a-sound>
     <a-sound src="#radio" autoplay="true" loop="true" on="true" volume="5"></a-sound>
     <a-sky src="#space"></a-sky>
